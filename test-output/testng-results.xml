@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-26T15:09:51 ICT" name="Default suite" finished-at="2022-11-26T15:10:07 ICT" duration-ms="16087">
+    <groups>
+    </groups>
+    <test started-at="2022-11-26T15:09:51 ICT" name="Default test" finished-at="2022-11-26T15:10:07 ICT" duration-ms="16087">
+      <class name="com.test.kerja.sqa.sqawebjavabddtestng.RunTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:09:51 ICT" name="setup" finished-at="2022-11-26T15:09:51 ICT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:09:51 ICT" name="springTestContextBeforeTestClass" finished-at="2022-11-26T15:09:51 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:09:51 ICT" name="springTestContextPrepareTestInstance" finished-at="2022-11-26T15:09:52 ICT" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:09:52 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-26T15:09:52 ICT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workZero()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="workZero()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:09:52 ICT" name="workZero" finished-at="2022-11-26T15:10:03 ICT" duration-ms="11038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workZero -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:03 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-26T15:10:03 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workZero()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:03 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-26T15:10:03 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="workOne()[pri:1, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:03 ICT" name="workOne" finished-at="2022-11-26T15:10:04 ICT" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workOne -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:04 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-26T15:10:04 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:04 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-26T15:10:04 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method signature="workTwo()[pri:2, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:04 ICT" name="workTwo" finished-at="2022-11-26T15:10:07 ICT" duration-ms="3370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workTwo -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:07 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-26T15:10:07 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:07 ICT" name="springTestContextAfterTestClass" finished-at="2022-11-26T15:10:07 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method is-config="true" signature="closeObject()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@558bdf1f]" started-at="2022-11-26T15:10:07 ICT" name="closeObject" finished-at="2022-11-26T15:10:07 ICT" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeObject -->
+      </class> <!-- com.test.kerja.sqa.sqawebjavabddtestng.RunTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
