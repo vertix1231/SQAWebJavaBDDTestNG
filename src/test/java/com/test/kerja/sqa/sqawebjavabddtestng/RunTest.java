@@ -19,6 +19,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.test.kerja.sqa.sqawebjavabddtestng.config.AutomationFrameworkConfiguration;
@@ -30,13 +31,16 @@ import com.test.kerja.sqa.sqawebjavabddtestng.utils.ConstantsParam;
 import com.test.kerja.sqa.sqawebjavabddtestng.utils.ScenarioTestCases;
 import com.test.kerja.sqa.sqawebjavabddtestng.utils.UtilsTest;
 
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
 @ContextConfiguration(classes = AutomationFrameworkConfiguration.class)
 public class RunTest extends AbstractTestNGSpringContextTests {
 	private static WebDriver driver;
 	private ExtentTest extentTest;
 	private static ExtentReports extentReports = new ExtentReports();
 	private static ExtentSparkReporter htmlreporter = new ExtentSparkReporter("src/test/resources/reporttest_testkerja.html");
-	private static ConstantsParam constantsParam;
 	private static LoginPage loginPage;
 	private static AdminPage adminPage;
 
@@ -45,7 +49,6 @@ public class RunTest extends AbstractTestNGSpringContextTests {
 
 	@BeforeTest
 	public void setup() {
-//		loginPage = new LoginPage();
 		extentReports.attachReporter(htmlreporter);
 		ScenarioTestCases[] tests = ScenarioTestCases.values();
 		extentTest = extentReports.createTest(tests[UtilsTest.scenariotestcount].getScenarioTestName());
@@ -53,57 +56,64 @@ public class RunTest extends AbstractTestNGSpringContextTests {
 	}
 	
 	@Test(priority = 0)
-	public void workZero() {
+	@Given("^Go to Main web Login")
+	public void workZero() throws IOException {
 		DriverSingleton.getInstance(configurationProperties.getBrowser());
 		driver = DriverSingleton.getDriver();
 		driver.get(ConstantsParam.URL_MAIN_WEB);
-		extentTest.log(Status.PASS, "Navigation to : " + ConstantsParam.URL_MAIN_WEB);
+		loginPage = new LoginPage();
+		if(loginPage.getTxtLoginHighlight().contains(configurationProperties.getLoginhighlightexpected())) {
+			extentTest.log(Status.PASS, "Navigation to : " + ConstantsParam.URL_MAIN_WEB);
+		}else{
+			extentTest.fail("Navigation to : " + ConstantsParam.URL_MAIN_WEB,
+					MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
+		}
 	}
 	
 	@Test(priority = 1)
-	public void workOne() {
+	@When("^input user and password to login to web")
+	public void workOne() throws IOException {
 		loginPage = new LoginPage();
-		loginPage.goToSignin("Admin", "admin123");
-		extentTest.log(Status.PASS, "input user and password to login to web pass");
-//		if (Status.PASS != null) {
-//			System.out.println("input user and password to login to web pass");
-//			extentTest.log(Status.PASS, "input user and password to login to web pass");
-//
-//		} else {
-//			System.out.println("input user and password to login to web fail");
-//			try {
-//				extentTest.fail("input user and password to login to web fail",
-//						MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
-//
-//		}
+		if (loginPage.getTxtLoginHighlight().contains(configurationProperties.getLoginhighlightexpected())) {
+			loginPage.goToSignin("Admin", "admin123");
+			System.out.println("input user and password to login to web pass");
+			extentTest.log(Status.PASS, "input user and password to login to web");
+
+		} else {
+			System.out.println("input user and password to login to web fail");
+			extentTest.fail("input user and password to login to web",
+					MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
+
+		}
 	}
 	
 	@Test(priority = 2)
-	public void workTwo() {
+	@Then("^enter dashboard page")
+	public void workTwo() throws IOException {
+		loginPage = new LoginPage();
+		if (loginPage.getTvdashboard().contains(configurationProperties.getDashboardexpectedtext())) {
+			System.out.println("scenario enter dashboard page pass");
+			extentTest.log(Status.PASS, "enter dashboard page pass");
+		} else {
+			System.out.println("scenario enter dashboard page fail");
+			extentTest.fail("succesfully enter dashboard page fail",
+					MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
+		}
+	}
+	
+	@Test(priority = 3)
+	@Given("^Click admin menu")
+	public void workThree() throws IOException {
 		adminPage = new AdminPage();
 		adminPage.goToAdmin();
-		if(Status.PASS != null) {
+		if(adminPage.getTxtAdmiTabHighlight().contains(configurationProperties.getAdmintabadminmenu())) {
+			System.out.println("scenario Click admin menu pass");
 			extentTest.log(Status.PASS, "Click admin menu");
-		}else if(Status.FAIL != null){
-			extentTest.log(Status.FAIL, "Click admin menu");
-		}
-//		if (Status.PASS != null) {
-//			System.out.println("input user and password to login to web pass");
-//			extentTest.log(Status.PASS, "input user and password to login to web pass");
-//
-//		} else {
-//			System.out.println("input user and password to login to web fail");
-//			try {
-//				extentTest.fail("input user and password to login to web fail",
-//						MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
-//
-//		}
+		}else{
+			System.out.println("scenario Click admin menu fail");
+			extentTest.fail("Click admin menu",
+					MediaEntityBuilder.createScreenCaptureFromPath(failcaptureScreen()).build());
+		}	
 	}
 	
 	@AfterTest
