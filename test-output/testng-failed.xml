@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.kerja.sqa.sqawebjavabddtestng.RunTest">
+      <class name="com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner">
         <methods>
-          <include name="workThree"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="workTwo"/>
-          <include name="closeObject"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="test"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.test.kerja.sqa.sqawebjavabddtestng.RunTest -->
+      </class> <!-- com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

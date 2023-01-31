@@ -89,15 +89,25 @@
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-spring -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-spring</artifactId>
+			 <artifactId>cucumber-spring</artifactId>
 			<version>7.1.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<!-- phase 2 cucumber for testng part 2 -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
 			<version>6.9.1</version>
 		</dependency>
+		
+		
+		
+		
+		 <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+        <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.2</version>
+        </dependency>
 	</dependencies>
 </project>

@@ -1,133 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-27T17:51:18 ICT" name="Default suite" finished-at="2022-11-27T17:51:42 ICT" duration-ms="23911">
+  <suite started-at="2022-12-06T08:16:55 ICT" name="Default suite" finished-at="2022-12-06T08:16:55 ICT" duration-ms="48">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner@66d3eec0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-27T17:51:18 ICT" name="Default test" finished-at="2022-11-27T17:51:42 ICT" duration-ms="23911">
-      <class name="com.test.kerja.sqa.sqawebjavabddtestng.RunTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:18 ICT" name="setup" finished-at="2022-11-27T17:51:19 ICT" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:19 ICT" name="springTestContextBeforeTestClass" finished-at="2022-11-27T17:51:19 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:19 ICT" name="springTestContextPrepareTestInstance" finished-at="2022-11-27T17:51:19 ICT" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:19 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-27T17:51:19 ICT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workZero() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="workZero()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:19 ICT" name="workZero" finished-at="2022-11-27T17:51:32 ICT" duration-ms="12720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- workZero -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-27T17:51:32 ICT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workZero() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-27T17:51:32 ICT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workOne() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="workOne()[pri:1, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="workOne" finished-at="2022-11-27T17:51:32 ICT" duration-ms="273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- workOne -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-27T17:51:32 ICT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workOne() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method signature="workTwo()[pri:2, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="workTwo" finished-at="2022-11-27T17:51:37 ICT" duration-ms="5064" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2022-12-06T08:16:55 ICT" name="Default test" finished-at="2022-12-06T08:16:55 ICT" duration-ms="48">
+      <class name="com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner@66d3eec0]" started-at="2022-12-06T08:16:55 ICT" name="setUpClass" finished-at="2022-12-06T08:16:55 ICT" duration-ms="8" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IRSYADMA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e137b5ba98db0b1d375405ddbaa7a51
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6}]]>
+              <![CDATA[io/cucumber/core/runtime/TypeRegistryConfigurerSupplier]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IRSYADMA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e137b5ba98db0b1d375405ddbaa7a51
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[1]/span/h6}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy38.getText(Unknown Source)
-at com.test.kerja.sqa.sqawebjavabddtestng.scenariopage.LoginPage.getTvdashboard(LoginPage.java:35)
-at com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workTwo(RunTest.java:94)
+              <![CDATA[java.lang.NoClassDefFoundError: io/cucumber/core/runtime/TypeRegistryConfigurerSupplier
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:184)
-at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -144,91 +44,35 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: io.cucumber.core.runtime.TypeRegistryConfigurerSupplier
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- workTwo -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:32 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-27T17:51:32 ICT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workTwo() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:37 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-27T17:51:37 ICT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workTwo() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method signature="workThree()[pri:3, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:37 ICT" name="workThree" finished-at="2022-11-27T17:51:42 ICT" duration-ms="5084" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="test()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner@66d3eec0]" started-at="2022-12-06T08:16:55 ICT" name="test" finished-at="2022-12-06T08:16:55 ICT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IRSYADMA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e137b5ba98db0b1d375405ddbaa7a51
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a}]]>
+              <![CDATA[io/cucumber/core/runtime/TypeRegistryConfigurerSupplier]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a"}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IRSYADMA', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ACER\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e137b5ba98db0b1d375405ddbaa7a51
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy38.click(Unknown Source)
-at com.test.kerja.sqa.sqawebjavabddtestng.scenariopage.AdminPage.goToAdmin(AdminPage.java:30)
-at com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workThree(RunTest.java:108)
+              <![CDATA[java.lang.NoClassDefFoundError: io/cucumber/core/runtime/TypeRegistryConfigurerSupplier
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
-at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:184)
-at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -245,43 +89,22 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: io.cucumber.core.runtime.TypeRegistryConfigurerSupplier
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- workThree -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:37 ICT" name="springTestContextBeforeTestMethod" finished-at="2022-11-27T17:51:37 ICT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workThree() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner@66d3eec0]" started-at="2022-12-06T08:16:55 ICT" name="tearDownClass" finished-at="2022-12-06T08:16:55 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:42 ICT" name="springTestContextAfterTestMethod" finished-at="2022-11-27T17:51:42 ICT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.kerja.sqa.sqawebjavabddtestng.RunTest.workThree() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:42 ICT" name="springTestContextAfterTestClass" finished-at="2022-11-27T17:51:42 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestClass -->
-        <test-method is-config="true" signature="closeObject()[pri:0, instance:com.test.kerja.sqa.sqawebjavabddtestng.RunTest@66c92293]" started-at="2022-11-27T17:51:42 ICT" name="closeObject" finished-at="2022-11-27T17:51:42 ICT" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeObject -->
-      </class> <!-- com.test.kerja.sqa.sqawebjavabddtestng.RunTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.test.kerja.sqa.sqawebjavabddtestng.runtestngspecial.MainRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
